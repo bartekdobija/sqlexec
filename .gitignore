@@ -1,0 +1,17 @@
+.vagrant/
+.idea/
+*.iml
+*.ipr
+*.iws
+derby.log
+.Rapp.history
+.DS_Store
+.classpath
+.project
+.settings
+target/
+build/
+/bin/
+src/test/resources/data/parquet/*
+src/test/resources/data/avro/*
+src/test/resources/output/
