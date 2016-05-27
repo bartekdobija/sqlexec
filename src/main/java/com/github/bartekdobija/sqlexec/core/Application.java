@@ -50,8 +50,9 @@ public class Application implements Runnable {
 
   private void printResultSet(ResultSet rs) throws SQLException {
     if (rs == null) return;
+    int size = rs.getMetaData().getColumnCount();
     while (rs.next()) {
-      for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
+      for (int i = 1; i <= size; i++) {
         if (i > 1) System.out.print(SEPARATOR);
         System.out.print(rs.getString(i));
       }
